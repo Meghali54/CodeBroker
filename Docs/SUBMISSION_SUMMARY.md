@@ -58,13 +58,7 @@ All required files have been generated for the **Agents Intensive Capstone Proje
 
 ---
 
-## 🚀 Next Steps for Kaggle Submission
 
-### Quick Submission (5 minutes):
-
-1. **Go to competition**: https://www.kaggle.com/competitions/agents-intensive-capstone-project
-
-2. **Create new notebook** or upload `notebooks/code_broker.ipynb`
 
 3. **Add secrets**:
    - `GOOGLE_API_KEY` (required)
@@ -166,14 +160,3 @@ Your Code Broker submission is:
 - ✅ **Professional**: Clean code and structure
 
 ---
-
-**🚀 You're ready for submission! Good luck!** 🍀
-
-For any questions, check:
-- `KAGGLE_WRITEUP.md` - Full project details
-- `SUBMISSION_GUIDE.md` - Step-by-step submission instructions
-- ADK Documentation: https://google.github.io/adk-docs/
-
----
-
-*Generated on: 2025-11-27 by Code Broker Documentation System*
