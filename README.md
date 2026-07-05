@@ -277,39 +277,5 @@ deployment-readiness scores, vulnerability & complexity charts, a detected
 architecture breakdown, and AI-generated recommendations. See
 [`webapp/README.md`](webapp/README.md) for setup.
 
-## 📖 Documentation
 
-For a detailed writeup including architecture, design decisions, and technical details, see:
-**[KAGGLE_WRITEUP.md](KAGGLE_WRITEUP.md)**
 
-## 🎓 Competition
-
-This project was created for the **Agents Intensive Capstone Project** on Kaggle:
-https://www.kaggle.com/competitions/agents-intensive-capstone-project
-
-## 👨‍💻 Author
-
-**Samer Atra** - [GitHub](https://github.com/Samir-atra)
-
-## 📄 License
-
-Apache License 2.0 - see [LICENSE](LICENSE) for details.
-
-## Citation
-
-If you use this project in your research, please cite it as follows:
-
-```bibtex
-@misc{attrah2026codebrokermultiagentautomated,
-      title={Code Broker: A Multi-Agent System for Automated Code Quality Assessment}, 
-      author={Samer Attrah},
-      year={2026},
-      eprint={2604.23088},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2604.23088}, 
-}
-```
----
-
-⭐ **Star this repo if you find it helpful and donate if you can!** 
