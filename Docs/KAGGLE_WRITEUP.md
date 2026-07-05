@@ -262,10 +262,6 @@ This project fulfills the Agents Intensive Capstone Project requirements by:
 ✅ **Well-Documented**: Comprehensive notebook with markdown explanations  
 ✅ **Practical Value**: Immediately useful for development teams and educators  
 
-## 👨‍💻 Author
-
-**Samer Atra**  
-GitHub: [@Samir-atra](https://github.com/Samir-atra)
 
 ## 📄 License
 
@@ -279,11 +275,5 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
-**⭐ If you find this project useful, please consider starring the repository!**
 
-```bash
-# Try it yourself:
-git clone https://github.com/Samir-atra/agents_intensive_dev.git
-cd agents_intensive_dev
-jupyter notebook notebooks/code_broker.ipynb
 ```
