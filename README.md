@@ -10,7 +10,7 @@
 
 Code Broker is an intelligent multi-agent system built with Google's Agent Development Kit (ADK) that automatically analyzes code files, directories, or GitHub repositories and generates detailed assessment reports with actionable improvement recommendations. The system features both a command-line interface via Jupyter notebooks and a modern web dashboard for interactive analysis.
 
-**Demo Video:** [YouTube Link](https://youtu.be/AzqChmFs0oM)
+
 
 ## ✨ Key Features
 
