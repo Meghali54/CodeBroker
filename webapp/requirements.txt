@@ -1,0 +1,21 @@
+# Version floors instead of exact pins for anything google-adk also depends
+# on (fastapi, pydantic, websockets, requests, python-dotenv) — google-adk
+# pulls in fairly recent minimums of these itself, and exact pins here were
+# conflicting with it. Let pip resolve the exact versions.
+fastapi>=0.115.6
+uvicorn[standard]>=0.32.1
+pydantic>=2.10.4
+python-dotenv>=1.0.1
+requests>=2.32.4
+websockets>=14.1
+python-multipart>=0.0.19
+
+# Standalone analysis tools — no overlap with google-adk's dependency tree,
+# safe to pin exactly.
+bandit==1.8.0
+radon==6.0.1
+pylint==3.3.2
+
+# Reused from the core project for the LLM-powered Improvement/Executive stages.
+google-adk==1.18.0
+google-genai==1.49.0

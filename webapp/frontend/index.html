@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Code Broker — Repository Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js" onerror="var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js';document.head.appendChild(s);"></script>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>CODE BROKER DESK</span><span class="dot">·</span>
+    <span>MULTI-AGENT REPOSITORY ANALYSIS</span><span class="dot">·</span>
+    <span>PASTE A GITHUB URL TO OPEN A POSITION</span><span class="dot">·</span>
+  </div>
+</div>
+
+<header class="desk-header">
+  <div class="brand">
+    <span class="brand-mark">CB</span>
+    <div class="brand-text">
+      <h1>Code&nbsp;Broker</h1>
+      <p>Repository Desk — multi-agent due diligence</p>
+    </div>
+  </div>
+
+  <form id="analyzeForm" class="ticket-form" autocomplete="off">
+    <label for="repoUrl" class="sr-only">GitHub repository URL</label>
+    <input
+      id="repoUrl"
+      name="repoUrl"
+      type="text"
+      placeholder="https://github.com/owner/repository"
+      required
+    />
+    <button type="submit" id="analyzeBtn">Open Position</button>
+  </form>
+</header>
+
+<main>
+  <section id="pipelineSection" class="panel pipeline-panel hidden">
+    <div class="panel-head">
+      <h2>Order Flow</h2>
+      <span id="repoLabel" class="repo-label"></span>
+    </div>
+    <div class="pipeline-flow" id="pipelineFlow"></div>
+  </section>
+
+  <section id="errorBanner" class="error-banner hidden"></section>
+
+  <section id="dashboard" class="dashboard hidden">
+
+    <div class="panel narrative-panel">
+      <div class="panel-head">
+        <h2>Desk Note</h2>
+        <span class="eyebrow">Executive Summary</span>
+      </div>
+      <p id="narrativeText" class="narrative-text"></p>
+    </div>
+
+    <div class="scores-grid" id="scoresGrid"></div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Vulnerabilities</h2>
+        <span class="eyebrow">Security Agent</span>
+      </div>
+      <canvas id="vulnChart" height="220"></canvas>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Complexity — Top Files</h2>
+        <span class="eyebrow">Quality Agent</span>
+      </div>
+      <canvas id="complexityChart" height="220"></canvas>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Language Distribution</h2>
+        <span class="eyebrow">Architecture Agent</span>
+      </div>
+      <canvas id="languageChart" height="220"></canvas>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Folder Footprint</h2>
+        <span class="eyebrow">By size on disk</span>
+      </div>
+      <canvas id="folderChart" height="220"></canvas>
+    </div>
+
+    <div class="panel timeline-panel">
+      <div class="panel-head">
+        <h2>Agent Timeline</h2>
+        <span class="eyebrow">Time per stage</span>
+      </div>
+      <canvas id="timelineChart" height="180"></canvas>
+    </div>
+
+    <div class="panel architecture-panel">
+      <div class="panel-head">
+        <h2>Repository Architecture</h2>
+        <span class="eyebrow">Detected stack</span>
+      </div>
+      <div id="architectureTree" class="architecture-tree"></div>
+      <div class="architecture-meta">
+        <div>
+          <h3>API Endpoints</h3>
+          <div id="endpointsList" class="chip-list"></div>
+        </div>
+        <div>
+          <h3>Design Patterns</h3>
+          <div id="patternsList" class="chip-list"></div>
+        </div>
+        <div>
+          <h3>Dependencies</h3>
+          <div id="depsList" class="chip-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel recommendations-panel">
+      <div class="panel-head">
+        <h2>Broker's Recommendations</h2>
+        <span class="eyebrow">Improvement Agent</span>
+      </div>
+      <pre id="recommendationsText" class="recommendations-text"></pre>
+    </div>
+
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

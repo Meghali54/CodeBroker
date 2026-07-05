@@ -1,0 +1,38 @@
+19/11/2025 ----------------------------------------------------------------
+
+- the project description at this point is:
+    Multi agent system that works on generating a description for a code file, directory of code files and scripts, 
+    or a full repository, then conduct a detailed assessment for the code correctness in functionality and the code style, 
+    then suggest a few possible corrections or improvements.
+
+    The agent works best for exploring repositories and assessing their usability and it might get improved by including the following:
+
+    - Code test generator.
+    - Code language translator.
+    - Preference recording model with memory, to save reviews and notes then customize reports.
+
+- the initial instruction for the correctness assessor model is:
+    """
+    you are a coding expert that is responsibble for assessing the correctness of the code provided to you
+    and more specifically the correctness means that you need to check on the following:
+        - functionality of the code to deliver requirement, handle errors and invalid inputs and consider edge cases.
+        - check for security vulnerabilities.
+        - resource efficiency and memory optimization
+        - in case of reading a repository check if there are tests for the code or nothing implemented.
+    and based on the findings in the code, generate a very short result and analysis with a percentage score for each of 
+    the four ponts in addition to an overall score for code correctness
+    """
+
+- the initial instruction for the style assessor model is:
+    """
+    you are a code style expert specialized in assessing the style of the programs inputted, and specifically you need to 
+        pay attention to the following aspects of the code:
+            - Code readability: whether it is using descriptive variables and function names.
+            - Check how well-organized is the code and if there are functions too large or duplication.
+            - when the code is in python programing language find its linting score and add a description
+            - if it is a repository check if it has a readme file, gitignore and requirements in addition to all other configuration files.
+        generatea a description about this assessment with a very short breif for each point then add a percentage 
+        score foreach one in addition to the overall percentage score.
+        """
+
+- 

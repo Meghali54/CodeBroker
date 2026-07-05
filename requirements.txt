@@ -1,0 +1,6 @@
+# python==3.14.0
+python-dotenv==1.2.1
+pylint==4.0.3
+google-adk==1.18.0
+google-genai==1.49.0
+litellm==1.80.0
