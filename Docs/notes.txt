@@ -1,4 +1,4 @@
-19/11/2025 ----------------------------------------------------------------
+
 
 - the project description at this point is:
     Multi agent system that works on generating a description for a code file, directory of code files and scripts, 
